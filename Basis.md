@@ -84,7 +84,7 @@ When analyzing asymptotic running time, focus on the important features:
 4. Insert it into the correct position in the left hand
 5. Compare cards from **right to left**
 
-![Insertion sort](./figures/insertion_sort.png)
+![Insertion sort](./Day1_0116/figures/insertion_sort.png)
 
 ---
 
@@ -134,9 +134,9 @@ the subarray `A[1 … j−1]` consists of the elements originally in
    Combine the subproblem solutions into the final solution  
    Cost: `Θ(n)`
 
-![Divide and Conquer](./figures/divide_conquer.png)  
-![Merge](./figures/merge.png)  
-![Merge Sort](./figures/mergeSort.png)
+![Divide and Conquer](./Day1_0116/figures/divide_conquer.png)  
+![Merge](./Day1_0116/figures/merge.png)  
+![Merge Sort](./Day1_0116/figures/mergeSort.png)
 
 ---
 
@@ -163,7 +163,7 @@ the subarray `A[1 … j−1]` consists of the elements originally in
 
 ### 3. Master Theorem
 
-![Master Theorem](./figures/masterTheorem.png)
+![Master Theorem](./Day1_0116/figures/masterTheorem.png)
 
 ---
 
@@ -198,5 +198,5 @@ $n \le \lceil n \rceil \le n + 1$
 4. **Result**  
    Return the maximum of the three candidates
 
-![Maximum Subarray](./figures/maxArray.png)  
-![Crossing Subarray](./figures/crossArray.png)
+![Maximum Subarray](./Day1_0116/figures/maxArray.png)  
+![Crossing Subarray](./Day1_0116/figures/crossArray.png)
