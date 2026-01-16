@@ -1,4 +1,7 @@
-# note: 考虑边界条件。
+# 88
+
+# note: 考虑边界条件
+# 双指针
 
 class Solution:
     def merge(self, nums1: List[int], m: int, nums2: List[int], n: int) -> None:
@@ -19,15 +22,15 @@ class Solution:
 
 
 # raw soluiton:
-class Solution: 
-    def merge(self, nums1: List[int], m: int, nums2: List[int], n: int) -> None: 
-        """ Do not return anything, modify nums1 in-place instead. """ 
-        num1_idx = m-1; 
-        mnum2_idx = n-1; 
-        for xx = m+n-1:0:
-            if nums1[num1_idx] >= nums2[num2_idx]: 
-                ums1[xx] = nums1[num1_idx]; 
-                num1_idx = num1_idx - 1; 
-            else:
-                nums1[xx] = nums2[num2_idx]; 
-                num2_idx = num2_idx - 1;
+# class Solution: 
+#     def merge(self, nums1: List[int], m: int, nums2: List[int], n: int) -> None: 
+#         """ Do not return anything, modify nums1 in-place instead. """ 
+#         num1_idx = m-1; 
+#         mnum2_idx = n-1; 
+#         for xx = m+n-1:0:
+#             if nums1[num1_idx] >= nums2[num2_idx]: 
+#                 ums1[xx] = nums1[num1_idx]; 
+#                 num1_idx = num1_idx - 1; 
+#             else:
+#                 nums1[xx] = nums2[num2_idx]; 
+#                 num2_idx = num2_idx - 1;
