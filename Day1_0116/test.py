@@ -8,11 +8,11 @@ def removeDuplicates(nums: List[int]) -> int:
     k = 2  # 下一个写入位置（前两个一定保留）
     for i in range(2, N):
 
-        if nums[i] != nums[k - 2]:
+        if nums[i] != nums[k - 2]: # 应该用k-2而不是i-2
             nums[k] = nums[i]
             print(i,k,nums)
             k += 1
-
+ 
     return k
 
 nums = [1,1,1,2,2,3];
