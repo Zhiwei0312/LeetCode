@@ -11,6 +11,7 @@ class Solution:
             str1 = strs[i]
             print('str1 = ',str1)
             if str1 not in Count:
+                Count[str1] = 1;
                 anagram = [str1]
 
                 for j in range(i+1,N):

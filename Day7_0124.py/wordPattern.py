@@ -3,7 +3,9 @@ from typing import List
 class Solution:
     def wordPattern(self, pattern: str, s: str) -> bool:
         s = s.split(' ')
-
+        if len(s) != len(pattern):
+            return False
+            
         fwd = {}
         for i,pa in enumerate(pattern):
             if pa not in fwd:
@@ -21,7 +23,3 @@ class Solution:
                     return False
         return True
     
-sol = Solution()
-pattern = "abba"
-s = "dog cat cat dog"
-result = sol.wordPattern(pattern,s)
