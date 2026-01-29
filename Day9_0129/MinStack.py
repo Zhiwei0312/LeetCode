@@ -42,7 +42,7 @@ class MinStack:
 # 即每次新元素 x 入栈的时候保存一个元组：（当前值 x，栈内最小值）。
 # 这个元组是一个整体，同时进栈和出栈。
 
-class MinStack(object):
+class MinStack1(object):
 
     def __init__(self):
         """
@@ -89,4 +89,3 @@ class MinStack(object):
 # obj.pop()
 # param_3 = obj.top()
 # param_4 = obj.getMin()
-]
