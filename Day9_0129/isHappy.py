@@ -41,3 +41,10 @@ class Solution:
 
 # 如果 n 不是一个快乐的数字，那么最终快跑者和慢跑者将在同一个数字上相遇。
 
+    def isHappy_linkedList(self,n:int) -> bool:
+        slow_runner = n
+        fast_runner = self.getSum(n)
+        while fast_runner != 1 and slow_runner != fast_runner:
+            slow_runner = self.getSum(slow_runner)
+            fast_runner = self.getSum(self.getSum(fast_runner))
+        return fast_runner == 1

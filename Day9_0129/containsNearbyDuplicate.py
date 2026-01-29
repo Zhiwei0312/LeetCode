@@ -29,6 +29,16 @@ class Solution:
                     Hash.add(nums[i])
         return False
 
+    def simpler_version():
+        s = set()
+        for i, num in enumerate(nums):
+            if i > k:
+                s.remove(nums[i - k - 1])
+            if num in s:
+                return True
+            s.add(num)
+        return False
+
 sol = Solution()
 
 nums = [1,2,3,1]
