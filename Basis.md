@@ -200,3 +200,19 @@ $n \le \lceil n \rceil \le n + 1$
 
 ![Maximum Subarray](./Day1_0116/figures/maxArray.png)  
 ![Crossing Subarray](./Day1_0116/figures/crossArray.png)
+
+**Week6**
+Heap is a nearly complete binary try
+Max-Heap property: key of i's children is smaller or equal to i's key
+   max element is the root
+Min-Heap property: key of i's children is greater or equal to i's key
+   min element is the root
+
+Height of node = number of edges on a longest simple path from the node down to a leaf
+height of heap = height of root = theta(log n)
+
+Maintaining the heap property
+
+Max-Heapify: Given an i such that the subtrees of i are heaps, it ensures that the subtree rooted at i is a heap satisfy the heap property
+
+Compare A[i], A[left(i)], A[right(i)], if necessary, swap A[i] with the largest of the two children and continue this process of comparing and swapping down the heap, until the subtree rooted at i is max-heap. O(n)
